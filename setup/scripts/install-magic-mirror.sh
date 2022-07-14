@@ -13,7 +13,7 @@ if [ "$ARM" == 'armv6l' ]; then
     npm --arch=armv7l install electron
 fi
 
-npm install
+npm install --only=prod --omit=dev
 
 info 'Setting up default config'
 # Copy default sample file
