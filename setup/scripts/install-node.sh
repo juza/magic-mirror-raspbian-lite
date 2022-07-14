@@ -12,7 +12,7 @@ else
 
     cd ~/
 
-    NODE_MAJOR_VERSION="12"
+    NODE_MAJOR_VERSION="16"
     ARM=$(uname -m)
 
     if [[ "$ARM" = "armv7l" ]]
