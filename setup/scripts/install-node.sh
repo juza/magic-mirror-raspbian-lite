@@ -15,7 +15,7 @@ else
     NODE_MAJOR_VERSION="16"
     ARM=$(uname -m)
 
-    if [[ "$ARM" = "armv7l" ]]
+    if [[ "$ARM" = "aarch64" ]]
     then
         echo "Original 'ARM' value is: $ARM, so using 'armv6l'"
         ARM="armv6l"
