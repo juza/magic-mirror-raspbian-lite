@@ -3,8 +3,8 @@
 SETUP_SCRIPTS_DIR=$MAGIC_MIRROR_RASP_LITE_DIR/setup/scripts
 
 # install required packages
-. $SETUP_SCRIPTS_DIR/install-node.sh
 . $SETUP_SCRIPTS_DIR/install-minimal-gui.sh
+. $SETUP_SCRIPTS_DIR/install-node.sh
 . $SETUP_SCRIPTS_DIR/install-browser.sh
 
 # install magic mirror even if the user don't want to run magic mirror server
