@@ -22,7 +22,7 @@ It is expected that you have the following already setup:
 * You have something better to do while the script does it's magic!!! :)
 
 ### rotate screen
-Create file in `/etc/X11/xorg.conf.d`
+Edit the xorg conf file `/etc/X11/xorg.conf.d`
 ```sh
 sudo nano /etc/X11/xorg.conf.d/rotate-screen.conf
 ```
@@ -33,6 +33,22 @@ Section "Monitor"
   Option        "Rotate" "left"
 EndSection
 ```
+
+### MagicMirror not starting on boot
+
+Edit the X11 Xwrapper config file `sudo nano /etc/X11/Xwrapper.config`
+
+From:
+```sh
+allowed_users=console
+```
+
+To:
+```sh
+allowed_users=anybody
+needs_root_rights=yes
+```
+
 
 
 ## What does this do?
