@@ -8,7 +8,7 @@ Simply run the command on your Raspberry Pi (this has been tested on Pi Zero W).
 
 *NOTE*: This script can take a while as it updates Rasbian package manager and pulls in all dependencies.
 
-```
+```sh
 bash -c "$(curl -sL https://raw.githubusercontent.com/ludwig234/magic-mirror-raspbian-lite/master/install.sh?$(date +%s))"
 ```
 
@@ -20,6 +20,20 @@ It is expected that you have the following already setup:
 * Raspbian Lite installed
 * The Raspberry Pi has an active internet connection
 * You have something better to do while the script does it's magic!!! :)
+
+### rotate screen
+Create file in `/etc/X11/xorg.conf.d`
+```sh
+sudo nano /etc/X11/xorg.conf.d/rotate-screen.conf
+```
+And add
+```
+Section "Monitor"
+  Identifier    "HDMI-1"
+  Option        "Rotate" "left"
+EndSection
+```
+
 
 ## What does this do?
 
