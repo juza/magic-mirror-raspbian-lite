@@ -18,7 +18,7 @@ MAGIC_MIRROR_SETUP=true
 MAGIC_MIRROR_HOST="localhost"
 MAGIC_MIRROR_PORT="8080"
 
-MAGIC_MIRROR_RASP_LITE_GIT='https://github.com/mthalhof/magic-mirror-raspbian-lite.git'
+MAGIC_MIRROR_RASP_LITE_GIT='https://github.com/ludwig234/magic-mirror-raspbian-lite.git'
 MAGIC_MIRROR_GIT='https://github.com/MichMich/MagicMirror'
 
 REGEX_NUMERIC_ONLY='^[0-9]+$'
