@@ -7,6 +7,4 @@ sudo apt install -y \
     matchbox \
     lxde-core \
     lightdm \
-    unclutter \
-    plymouth \
-    plymouth-themes
+    unclutter
