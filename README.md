@@ -58,5 +58,4 @@ This script sets up the following in your Raspbian Lite setup:
 * [Chromium](https://www.chromium.org/getting-involved/download-chromium) (using fullscreen chromium kiosk mode)
 * [Node](https://nodejs.org/en/) (required by MagicMirror)
 * [MagicMirror](https://magicmirror.builders/)
-* [Plymouth](https://gitlab.freedesktop.org/plymouth/plymouth) (pretty splash screens used by MagicMirror)
 * Auto login to Raspberry Pi
