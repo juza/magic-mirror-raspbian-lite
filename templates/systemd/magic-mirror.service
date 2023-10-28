@@ -1,13 +1,15 @@
 [Unit]
 Description=Magic Mirror Service
 After=network.target
+StartLimitIntervalSec=0
 
 [Service]
 Type=simple
+Restart=always
+RestartSec=1
 User=%%USER%%
-WorkingDirectory=%%HOME_DIR%%
-ExecStart=%%ENTRY_POINT%%
-Restart=on-failure
+WorkingDirectory=%%MAGIC_MIRROR_DIR%%
+ExecStart=[node bin here] serveronly
 
 [Install]
 WantedBy=multi-user.target
