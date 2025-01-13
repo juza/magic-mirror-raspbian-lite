@@ -19,7 +19,7 @@ MAGIC_MIRROR_HOST="localhost"
 MAGIC_MIRROR_PORT="8080"
 
 MAGIC_MIRROR_RASP_LITE_GIT='https://github.com/juza/magic-mirror-raspbian-lite.git'
-MAGIC_MIRROR_GIT='https://github.com/MichMich/MagicMirror'
+MAGIC_MIRROR_GIT='https://github.com/MagicMirrorOrg/MagicMirror'
 
 REGEX_NUMERIC_ONLY='^[0-9]+$'
 
