@@ -16,6 +16,7 @@ sudo cp "$TEMPLATE_DIR/systemd/$SERVICE_FILE" "$SERVICE_PATH"
 sudo sed -i -e "s|%%ENTRY_POINT%%|$MM_SERVER_STARTUP|g" "$SERVICE_PATH"
 sudo sed -i -e "s|%%USER%%|$USER|g" "$SERVICE_PATH"
 sudo sed -i -e "s|%%HOME_DIR%%|$HOME_DIR|g" "$SERVICE_PATH"
+sudo sed -i -e "s|%MAGIC_MIRROR_DIR%%|$MAGIC_MIRROR_DIR|g" "$SERVICE_PATH"
 
 # reset permissions
 sudo chmod 644 "$SERVICE_PATH"
