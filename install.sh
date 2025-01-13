@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $USER == 'root' ]; then
+	 echo Please login as a user to execute the MagicMirror installation,  not root
+	 exit 1
+fi
+
 # stop on error
 set -e
 
@@ -161,11 +166,6 @@ info 'Creating app directory'
 sudo rm -rf "$MAGIC_MIRROR_APP_DIR"
 # create app dir
 mkdir -p "$MAGIC_MIRROR_APP_DIR"
-# list the directory
-cd "$MAGIC_MIRROR_APP_DIR" > /dev/null
-cd .. > /dev/null
-ls -la
-cd ~/ > /dev/null
 
 # export so the child scripts can access them
 export HOME_DIR
@@ -178,7 +178,7 @@ export MAGIC_MIRROR_PORT
 
 # start the proper setup
 . $MAGIC_MIRROR_RASP_LITE_DIR/setup/run.sh
-. $MAGIC_MIRROR_RASP_LITE_DIR/setup/cleanup.sh
+# . $MAGIC_MIRROR_RASP_LITE_DIR/setup/cleanup.sh
 
 info 'Rebooting now...'
 sudo reboot
