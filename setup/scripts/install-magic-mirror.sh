@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "$MAGIC_MIRROR_DIR"
+cd "$MAGIC_MIRROR_DIR" || exit
 
 ARM=$(uname -m)
 
