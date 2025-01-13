@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# shellcheck SETUP_SCRIPTS_DIR=./scripts
 SETUP_SCRIPTS_DIR=$MAGIC_MIRROR_RASP_LITE_DIR/setup/scripts
 
 # install required packages
@@ -7,8 +8,9 @@ SETUP_SCRIPTS_DIR=$MAGIC_MIRROR_RASP_LITE_DIR/setup/scripts
 . $SETUP_SCRIPTS_DIR/install-node.sh
 . $SETUP_SCRIPTS_DIR/install-browser.sh
 
-# install magic mirror 
+# install magic mirror and pm2
 . $SETUP_SCRIPTS_DIR/install-magic-mirror.sh
+. $SETUP_SCRIPTS_DIR/install-pm2.sh
 
 # setup options
 . $SETUP_SCRIPTS_DIR/copy-app-files.sh
