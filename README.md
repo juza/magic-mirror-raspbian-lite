@@ -1,3 +1,5 @@
+# This version is under development and is currently not working!
+
 # Magic Mirror for Raspbian Lite
 
 A quick and easy, single command to setup [Magic Mirror](https://github.com/MichMich/MagicMirror) on Raspbian Lite. This script will install all required dependencies and a minimal GUI to run MagicMirror on Raspbian Lite (non-desktop version).
