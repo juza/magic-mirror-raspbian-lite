@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/
+cd ~/ || exit
 
 NODE_MAJOR_VERSION="22"
 curl -sL https://deb.nodesource.com/setup_$NODE_MAJOR_VERSION.x | sudo -E bash -
